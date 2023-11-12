@@ -25,9 +25,9 @@ function Form({ props }) {
   }
 
   function handleChange(event) {
+    console.log('here')
     const itemType = event.target.name;
     const item = event.target.value;
-
     if (formState[itemType].includes(item)) {
       setFormState({
         ...formState,
