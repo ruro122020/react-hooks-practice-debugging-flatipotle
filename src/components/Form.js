@@ -11,7 +11,7 @@ const DEFAULT_STATE = {
   sides: [],
 };
 
-function Form() {
+function Form({ props }) {
   const [formState, setFormState] = useState(DEFAULT_STATE);
 
   function handleSubmit(event) {
@@ -24,7 +24,7 @@ function Form() {
     event.target.reset();
   }
 
-  function handleChange() {
+  function handleChange(event) {
     const itemType = event.target.name;
     const item = event.target.value;
 
