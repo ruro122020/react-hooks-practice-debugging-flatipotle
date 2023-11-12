@@ -11,7 +11,7 @@ const DEFAULT_STATE = {
   sides: [],
 };
 
-function Form({ props }) {
+function Form(props) {
   const [formState, setFormState] = useState(DEFAULT_STATE);
 
   function handleSubmit(event) {
