@@ -14,7 +14,7 @@ const DEFAULT_STATE = {
 function Form() {
   const [formState, setFormState] = useState(DEFAULT_STATE);
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     event.preventDefault();
     props.addOrder(formState);
 
